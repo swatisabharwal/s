@@ -1,0 +1,112 @@
+ProjectName: eReader QA
+base_url: 'https://hbpreader-qa.firebaseapp.com/?epub=EE-8197.epub#!/page/1'
+login_title: 'Harvard Business Publishing Reader'
+cb_login_url: https://cb.qa.hbsp.harvard.edu/cbmp/login
+CoursePackName: June_22_CP1
+core_curri_url: https://hbpreader-qa.firebaseapp.com/?epub=EE-8197.epub$
+#ePub: Atlantic Computer_A Bundle of Pricing Options
+ePub: Entrepreneurship Reading_Launching Global Ventures
+cc_item: Marketing Reading_Brand Positioning
+search_item: 8162-HTM-ENG
+users:
+ admin:
+  username: HBP_ADMIN
+  password: Welcome1
+ teacher:
+  username1: teacher_qa
+  password1: Welcome1
+  username2: aws_edu_prem_02_290915
+  password2: Welcome1
+ student:
+  username1: student_qa
+  password2: Welcome1
+  username2: ereader_automation_28july2016
+  password2: Welcome1
+
+kaltura_video_player_iframe: kaltura_player_1_ifp
+
+Resolutions:
+ iPhone5s_x: 320
+ iPhone5s_y: 568
+ 
+foot_note_links:
+ link1_page: 4
+ link2_page: 7
+ link3_page: 8
+ link4_page: 0
+ link5_page: 12
+ link6_page: 12
+ link_a_page: 18
+ link_b_page: 18
+ 
+topic:
+ one: Title Page
+ two: Atlantic Computer_A Bundle of Pricing Options
+ 
+subtopics: 
+ sub_topic1_one: Copyright
+ sub_topic2_one: I. Overview
+ sub_topic2_two: II. The Necessary Background
+ sub_topic2_three: III. Marketing the Tronn Loaded with the PESA
+ sub_topic2_four: IV. Planning the Strategy
+ sub_topic2_five: Exhibits
+ sub_topic2_five_one: Exhibit 1 Projected Market Volumes by Segment (in units)
+ sub_topic2_five_two: Exhibit 2 Test Results from PESA Software on Tronn Servers on a Variety of Application Types ,
+ sub_topic2_five_three: Exhibit 3 Salient Pricing Information
+ sub_topic2_five_four: Exhibit 4 Customer Profiles
+ sub_topic2_six: Footnotes
+ 
+pixel_diff_scrubber: 43
+
+pnumber_For_PageNumber_2: 3
+pnumber_For_PageNumber_3: 4
+pnumber_For_PageNumber_4: 6
+pnumber_For_PageNumber_5: 7
+pnumber_For_PageNumber_6: 9
+
+number_of_pages: 10
+
+icon_shapes:
+ round: shape-a
+ square: shape-b
+ triangle: shape-c
+ rhombus: shape-d
+ 
+color_codes:
+ blue: 97e4ff
+ green: a9ef9b
+ yellow: ffde60
+ pink: ffb1c2
+ yellow_rgb: rgb(255, 238, 172)
+ pink_rgb: rgb(255, 202, 214)
+ blue_rgb: rgb(202, 241, 255)
+ green_rgb: rgb(207, 246, 199)
+
+side_notes_icon_Color_code:
+ blue_rgb: rgb(151, 228, 255)
+ green_rgb: rgb(169, 239, 155)
+ yellow_rgb: rgb(255, 222, 96)
+ pink_rgb: rgb(255, 177, 194)
+ 
+multiple_words:
+ word1: DayTraderJournal.com
+ word2: Matzer
+ word3: United
+ #word4: MBA.
+ word4: Capps
+ 
+color1: Blue
+color2: Green
+color3: Yellow
+color4: Pink
+      
+cc_caption1: CLAYTON M. CHRISTENSEN
+cc_caption2: I'd like now
+
+loading_messages:
+ message1: Initializing eReader
+ message2: Retrieving your document
+ message3: Extracting your document
+ message4: Loading you annotations
+     
+  

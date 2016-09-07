@@ -1,0 +1,13 @@
+ProjectName: testBuilder QA
+login_title: 'Harvard Business Publishing Reader'
+cb_login_url: https://cb.qa.hbsp.harvard.edu/cbmp/login
+product_id_For_Edit: 8197-HTM-ENG
+product_id_For_Select: 8097-HTM-ENG
+users:
+ admin:
+  username: he_admin1
+  password: Welcome1
+ edu_prem 
+  username: pilot_test_builder_eduprem
+  password: Welcome1
+ 

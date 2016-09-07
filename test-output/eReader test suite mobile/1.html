@@ -1,0 +1,788 @@
+<html>
+<head>
+<title>TestNG:  1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>1</h2><table border='1' align="center">
+<tr>
+<<<<<<< HEAD
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 22 13:34:19 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>209 seconds (209332 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>0/0/81</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 19 12:26:36 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1113 ms)</td>
+>>>>>>> 8fe094e1fd15487c6943d57fcd123153415737c0
+</tr><tr>
+<td>Included groups:</td><td>mobile </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<<<<<<< HEAD
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+=======
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.start_test_session()'><b>start_test_session</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test<br>Parameters: null<br/>
+<a href="#Output-1735934726" onClick='toggleBox("Output-1735934726", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1735934726" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1735934726">
+[INFO]: Yaml file path is :src/test/resources/testdata/mobile/QA_TestData.yml<br/>
+[INFO]: The test Browser is MOBILE !!!<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qait.hbp.automation.WebDriverFactory.setRemoteDriver(WebDriverFactory.java:102)
+	at com.qait.hbp.automation.WebDriverFactory.getDriver(WebDriverFactory.java:75)
+	at com.qait.hbp.automation.TestSessionInitiator._configureBrowser(TestSessionInitiator.java:158)
+	at com.qait.hbp.automation.TestSessionInitiator.testInitiator(TestSessionInitiator.java:152)
+	at com.qait.hbp.automation.TestSessionInitiator.&lt;init&gt;(TestSessionInitiator.java:145)
+	at com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.start_test_session(Annotation_And_Highlights_Test.java:28)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1735934726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1735934726'><pre>java.lang.NullPointerException
+	at com.qait.hbp.automation.WebDriverFactory.setRemoteDriver(WebDriverFactory.java:102)
+	at com.qait.hbp.automation.WebDriverFactory.getDriver(WebDriverFactory.java:75)
+	at com.qait.hbp.automation.TestSessionInitiator._configureBrowser(TestSessionInitiator.java:158)
+	at com.qait.hbp.automation.TestSessionInitiator.testInitiator(TestSessionInitiator.java:152)
+	at com.qait.hbp.automation.TestSessionInitiator.&lt;init&gt;(TestSessionInitiator.java:145)
+	at com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.start_test_session(Annotation_And_Highlights_Test.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.stop_test_session()'><b>stop_test_session</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+>>>>>>> 8fe094e1fd15487c6943d57fcd123153415737c0
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<<<<<<< HEAD
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0010_Launch_Login_URL()'><b>Test0010_Launch_Login_URL</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1947185929" onClick='toggleBox("Output-1947185929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1947185929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1947185929">
+[ASSERT PASSED]: User is able to launch Login URL<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0011_Verify_User_Is_Able_To_Login_Into_Application()'><b>Test0011_Verify_User_Is_Able_To_Login_Into_Application</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-2079565272" onClick='toggleBox("Output-2079565272", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2079565272" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2079565272">
+[ASSERT PASSED]: User is able to login without any errors<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0012_Verify_User_Is_Able_To_Navigate_to_CoursePacks_Page()'><b>Test0012_Verify_User_Is_Able_To_Navigate_to_CoursePacks_Page</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1928301845" onClick='toggleBox("Output-1928301845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1928301845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1928301845">
+[ASSERT PASSED]: User is able to navigate to Coursepacks page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0013_Verify_User_Is_Able_To_Navigate_to_eReader_Course()'><b>Test0013_Verify_User_Is_Able_To_Navigate_to_eReader_Course</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1642785848" onClick='toggleBox("Output-1642785848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1642785848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1642785848">
+[ASSERT PASSED]: User is able to navigate to Coursepack eReader-CC<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0014_Verify_User_Is_Able_To_Navigate_to_Launch_eReader()'><b>Test0014_Verify_User_Is_Able_To_Navigate_to_Launch_eReader</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-71016405" onClick='toggleBox("Output-71016405", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-71016405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-71016405">
+[INFO]: EPUB title is : Marketing Reading: Brand Positioning<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0020_Switch_To_the_eReader_Window()'><b>Test0020_Switch_To_the_eReader_Window</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-2044482328" onClick='toggleBox("Output-2044482328", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044482328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044482328">
+Windows: 2<br/>
+Title: Harvard Business Publishing Reader<br/>
+old style of loader is : opacity: 0.238751;<br/>
+[ASSERT PASSED]: Progress Bar box vanished!<br/>
+[ASSERT FAILED]: Correct page title is displayed on launching eReader<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0022_Verify_Correct_Messaging_Is_Displayed_On_Read_Offline_PopUp()'><b>Test0022_Verify_Correct_Messaging_Is_Displayed_On_Read_Offline_PopUp</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-2107543287" onClick='toggleBox("Output-2107543287", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2107543287" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2107543287">
+[ASSERT PASSED]: Correct messaging is displayed on read offline pop up<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test0023_Click_Not_Now()'><b>Test0023_Click_Not_Now</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-252738640" onClick='toggleBox("Output-252738640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-252738640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-252738640">
+[ASSERT PASSED]: Read offline pop-up dismisses on clicking Not Now button<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test142_Verify_User_Is_Able_To_Arrive_At_Video_1_Page()'><b>Test142_Verify_User_Is_Able_To_Arrive_At_Video_1_Page</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1360215046" onClick='toggleBox("Output-1360215046", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1360215046" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1360215046">
+[ASSERT PASSED]: Toc menu opened after clicking TOC icon<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test15_Verify_Logo_For_Video_Is_Present_In_Starting_Of_Video()'><b>Test15_Verify_Logo_For_Video_Is_Present_In_Starting_Of_Video</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1154821602" onClick='toggleBox("Output-1154821602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1154821602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1154821602">
+[ASSERT PASSED]: For video 1video logo is present<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test161_Verify_For_Videos_Kaltura_Video_Player_Is_Present()'><b>Test161_Verify_For_Videos_Kaltura_Video_Player_Is_Present</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1560702077" onClick='toggleBox("Output-1560702077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1560702077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560702077">
+[ASSERT PASSED]: User navigated to Video player<br/>
+[ASSERT PASSED]: For video ,Kaltura video player is present<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test17_Verify_For_Video_Starts_Playing_On_Clicking_Play_Button()'><b>Test17_Verify_For_Video_Starts_Playing_On_Clicking_Play_Button</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-42102625" onClick='toggleBox("Output-42102625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-42102625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-42102625">
+[INFO]: Video watched before playing was :0 %<br/>
+[INFO]: Video watched is :3.6 %<br/>
+[ASSERT PASSED]: Video starts playing on clicking Play button<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test18_Verify_Length_Of_Video_Is_Displayed_In_N_By_M_Format()'><b>Test18_Verify_Length_Of_Video_Is_Displayed_In_N_By_M_Format</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-1855734078" onClick='toggleBox("Output-1855734078", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1855734078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1855734078">
+
+[INFO]: Layout test for page:- eReader/CoreCurriculumReading passed. <br/>
+[INFO]: Check reports in the location:- D:\eReader\eReader\Harvard_eReader\target\galen-reports
+<br/>
+[ASSERT PASSED]: Length of video is displayed in N By M format<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test24_Verify_Options_Are_Displayed_In_Captions()'><b>Test24_Verify_Options_Are_Displayed_In_Captions</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-452015229" onClick='toggleBox("Output-452015229", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452015229" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452015229">
+[ASSERT PASSED]: All three options are displayed under caption<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test25_Verify_User_Is_Able_To_Select_Available_Caption()'><b>Test25_Verify_User_Is_Able_To_Select_Available_Caption</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test<br/>
+<a href="#Output-546446235" onClick='toggleBox("Output-546446235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-546446235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-546446235">
+[ASSERT PASSED]: Caption is selected<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test27_Verify_On_Pausing_Video_CC_Text_Also_Pauses()'><b>Test27_Verify_On_Pausing_Video_CC_Text_Also_Pauses</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test</td>
+<td></td>
+<td>11</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test28_Verify_CC_Text_Also_Moves_On_Forwarding_Video_From_Progress_Bar()'><b>Test28_Verify_CC_Text_Also_Moves_On_Forwarding_Video_From_Progress_Bar</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test</td>
+<td></td>
+<td>7</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test30_Verify_User_Is_Able_To_Exit_Full_Screen_By_Pressing_Escape_Key()'><b>Test30_Verify_User_Is_Able_To_Exit_Full_Screen_By_Pressing_Escape_Key</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test</td>
+<td></td>
+<td>3</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test31_Verify_User_Is_Able_To_Watch_Video_In_Full_Screen()'><b>Test31_Verify_User_Is_Able_To_Watch_Video_In_Full_Screen</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test</td>
+<td></td>
+<td>3</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test.Test32_Verify_User_Is_Able_To_Exit_Full_Screen_By_Clicking_Exit_Screen_Icon_In_Video()'><b>Test32_Verify_User_Is_Able_To_Exit_Full_Screen_By_Clicking_Exit_Screen_Icon_In_Video</b><br>Test class: com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test</td>
+<td></td>
+<td>3</td>
+<td>com.qait.hbp.ereader.tests.Core_Curriculum_Reading_Test@91161c7</td></tr>
+=======
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0010_Launch_Login_URL()'><b>Test0010_Launch_Login_URL</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0011_Verify_User_Is_Able_To_Login_Into_Application()'><b>Test0011_Verify_User_Is_Able_To_Login_Into_Application</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0012_Verify_User_Is_Able_To_Navigate_to_CoursePacks_Page()'><b>Test0012_Verify_User_Is_Able_To_Navigate_to_CoursePacks_Page</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0013_Verify_User_Is_Able_To_Navigate_to_eReader_Course()'><b>Test0013_Verify_User_Is_Able_To_Navigate_to_eReader_Course</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0014_Verify_User_Is_Able_To_Navigate_to_Launch_eReader()'><b>Test0014_Verify_User_Is_Able_To_Navigate_to_Launch_eReader</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0020_Switch_To_the_eReader_Window()'><b>Test0020_Switch_To_the_eReader_Window</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0021_Verify_User_Is_Able_To_Navigate_Through_The_WalkThrough()'><b>Test0021_Verify_User_Is_Able_To_Navigate_Through_The_WalkThrough</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test00310_Delete_all_Notes_From_eReader()'><b>Test00310_Delete_all_Notes_From_eReader</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test00311_verify_Instructions_Are_Displayed_For_Empty_Notes_Pane()'><b>Test00311_verify_Instructions_Are_Displayed_For_Empty_Notes_Pane</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test00313_Click_Back_Button_For_Handheld()'><b>Test00313_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test004_Verify_Notes_Pane_Opens_When_User_Clicks_Notes_Icon()'><b>Test004_Verify_Notes_Pane_Opens_When_User_Clicks_Notes_Icon</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test005_Click_Back_Button_For_Handheld()'><b>Test005_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0060_Verify_Notes_Pane_Closes_When_User_Clicks_Notes_Icon_Again()'><b>Test0060_Verify_Notes_Pane_Closes_When_User_Clicks_Notes_Icon_Again</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0061_Verify_Refresh_Sync_Icon_Spins_On_Clicking_It()'><b>Test0061_Verify_Refresh_Sync_Icon_Spins_On_Clicking_It</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0062_Verify_Pen_Icon_Is_Displayed_At_Bottom_Right_Of_Application()'><b>Test0062_Verify_Pen_Icon_Is_Displayed_At_Bottom_Right_Of_Application</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0063_Verify_Position_Of_Icons_Are_Displayed_Correctly_Inside_Scrubber_Bar()'><b>Test0063_Verify_Position_Of_Icons_Are_Displayed_Correctly_Inside_Scrubber_Bar</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0070_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active()'><b>Test0070_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0071_Verify_User_Is_Able_To_Select_Paragraph()'><b>Test0071_Verify_User_Is_Able_To_Select_Paragraph</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0072_Verify_User_Is_Able_To_Highlight_Paragraph()'><b>Test0072_Verify_User_Is_Able_To_Highlight_Paragraph</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0073_Verify_User_Is_Able_To_Add_Note_By_Clicking_On_NotePad_Icon()'><b>Test0073_Verify_User_Is_Able_To_Add_Note_By_Clicking_On_NotePad_Icon</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0074_Click_Back_Button_For_Handheld()'><b>Test0074_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0076_Verify_Annotation_Gets_Deleted_On_Trash_Can_Of_Flyout()'><b>Test0076_Verify_Annotation_Gets_Deleted_On_Trash_Can_Of_Flyout</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0077_Click_Back_Button_For_Handheld()'><b>Test0077_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0081_Verify_User_Is_Able_To_Select_Paragraph()'><b>Test0081_Verify_User_Is_Able_To_Select_Paragraph</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test009_Verify_User_Is_Able_To_Highlight_Paragraph()'><b>Test009_Verify_User_Is_Able_To_Highlight_Paragraph</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test010_Verify_Notes_Pane_Is_Closed_When_Even_After_Annotation_Is_Created()'><b>Test010_Verify_Notes_Pane_Is_Closed_When_Even_After_Annotation_Is_Created</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test011_Verify_On_Clicking_Annotation_Notes_Pane_Is_Displayed()'><b>Test011_Verify_On_Clicking_Annotation_Notes_Pane_Is_Displayed</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test012_Verify_User_Is_Able_To_Enter_Text_In_Search_Notes_Field()'><b>Test012_Verify_User_Is_Able_To_Enter_Text_In_Search_Notes_Field</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test013_Verify_User_Is_Able_To_Add_Notes_To_Notes_Card_Using_Notepad_Icon()'><b>Test013_Verify_User_Is_Able_To_Add_Notes_To_Notes_Card_Using_Notepad_Icon</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0140_Verify_User_Is_Able_To_Add_Note_By_Clicking_On_NotePad_Icon()'><b>Test0140_Verify_User_Is_Able_To_Add_Note_By_Clicking_On_NotePad_Icon</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0141_Click_Back_Button_For_Handheld()'><b>Test0141_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test01501_Verify_User_Is_Able_To_Double_Click_Highlight_And_Change_Highlight_Color()'><b>Test01501_Verify_User_Is_Able_To_Double_Click_Highlight_And_Change_Highlight_Color</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test01502_Verify_Notes_Pane_Opens_When_User_Clicks_Notes_Icon()'><b>Test01502_Verify_Notes_Pane_Opens_When_User_Clicks_Notes_Icon</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test01503_Verify_Highlight_Color_Got_Changes_In_Notes_Preview_Too()'><b>Test01503_Verify_Highlight_Color_Got_Changes_In_Notes_Preview_Too</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test01504_Click_Back_Button_For_Handheld()'><b>Test01504_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0151_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active()'><b>Test0151_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test016_Verify_That_Last_Selected_Color_Is_Displayed_On_Second_Highlight()'><b>Test016_Verify_That_Last_Selected_Color_Is_Displayed_On_Second_Highlight</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test017_Verify_That_Notes_Can_be_Added_By_Clicking_Edit_Icon_Of_Annotation_Flyout()'><b>Test017_Verify_That_Notes_Can_be_Added_By_Clicking_Edit_Icon_Of_Annotation_Flyout</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test018_Click_Back_Button_For_Handheld()'><b>Test018_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test019_Verify_Side_Text_Note_Icon_Is_Created_On_AddingNote()'><b>Test019_Verify_Side_Text_Note_Icon_Is_Created_On_AddingNote</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0200_Verify_HighLight_Can_Be_Deleted_By_Clicking_Trashcan_Of_Annotation_Flyout()'><b>Test0200_Verify_HighLight_Can_Be_Deleted_By_Clicking_Trashcan_Of_Annotation_Flyout</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0201_Launch_Notes_Pane_For_Mobile()'><b>Test0201_Launch_Notes_Pane_For_Mobile</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test021_Verify_Highlight_Also_Got_Deleted_From_Notes_Pane()'><b>Test021_Verify_Highlight_Also_Got_Deleted_From_Notes_Pane</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0220_Verify_HighLight_And_Notes_Can_Be_Deleted_By_Clicking_Delete_Icon_Of_Notes_Card()'><b>Test0220_Verify_HighLight_And_Notes_Can_Be_Deleted_By_Clicking_Delete_Icon_Of_Notes_Card</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0221Click_Back_Button_For_Handheld()'><b>Test0221Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0230_Verify_Highlight_And_Notes_Link_Created_Got_Deleted_From_Content()'><b>Test0230_Verify_Highlight_And_Notes_Link_Created_Got_Deleted_From_Content</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0231_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active()'><b>Test0231_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test024_Create_Fresh_Annotate()'><b>Test024_Create_Fresh_Annotate</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test025_Launch_Notes_Pane_For_Mobile()'><b>Test025_Launch_Notes_Pane_For_Mobile</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test026_Verify_HighLight_And_Notes_Can_Be_Deleted_By_Clicking_Delete_Icon_Of_Notes_Card()'><b>Test026_Verify_HighLight_And_Notes_Can_Be_Deleted_By_Clicking_Delete_Icon_Of_Notes_Card</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test027_Click_Back_Button_For_Handheld()'><b>Test027_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test028_Verify_Highlight_Created_Got_Deleted_From_Content()'><b>Test028_Verify_Highlight_Created_Got_Deleted_From_Content</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test029_Verify_Notes_Pane_Closes_When_User_Clicks_Notes_Icon_Again()'><b>Test029_Verify_Notes_Pane_Closes_When_User_Clicks_Notes_Icon_Again</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test030_Delete_all_Notes_From_eReader()'><b>Test030_Delete_all_Notes_From_eReader</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test031_Click_Back_Button_For_Handheld()'><b>Test031_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test032_Verify_Notes_Pane_Closes_When_User_Clicks_Notes_Icon_Again()'><b>Test032_Verify_Notes_Pane_Closes_When_User_Clicks_Notes_Icon_Again</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test033_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active()'><b>Test033_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test034_Verify_Last_Selected_Color_Is_Displayed_In_Square_Shape()'><b>Test034_Verify_Last_Selected_Color_Is_Displayed_In_Square_Shape</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0350_Verify_User_Is_Able_To_Select_First_Highlight_In_Line_And_add_Note()'><b>Test0350_Verify_User_Is_Able_To_Select_First_Highlight_In_Line_And_add_Note</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0351_Click_Back_Button_For_Handheld()'><b>Test0351_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0352_Verify_User_Is_Able_To_Close_Notes_Pane()'><b>Test0352_Verify_User_Is_Able_To_Close_Notes_Pane</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0353_Verify_Side_Notes_Icon_For_First_Highlight_In_Line()'><b>Test0353_Verify_Side_Notes_Icon_For_First_Highlight_In_Line</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0354_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active()'><b>Test0354_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0355_Verify_User_Is_Able_To_Select_Second_Highlight_In_Line_And_add_Note()'><b>Test0355_Verify_User_Is_Able_To_Select_Second_Highlight_In_Line_And_add_Note</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0356_Click_Back_Button_For_Handheld()'><b>Test0356_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0357_Verify_User_Is_Able_To_Close_Notes_Pane()'><b>Test0357_Verify_User_Is_Able_To_Close_Notes_Pane</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0358_Verify_Side_Notes_Icon_For_Second_Highlight_In_Line()'><b>Test0358_Verify_Side_Notes_Icon_For_Second_Highlight_In_Line</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0359_Verify_Side_Notes_Icon_Of_Nearest_Selection_Is_Clickable()'><b>Test0359_Verify_Side_Notes_Icon_Of_Nearest_Selection_Is_Clickable</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0360_Click_Back_Button_For_Handheld()'><b>Test0360_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0361_Verify_User_Is_Able_To_Close_Notes_Pane()'><b>Test0361_Verify_User_Is_Able_To_Close_Notes_Pane</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0362_Verify_Side_Notes_Icon_Of_First_Highlight_Is_Not_Clickable()'><b>Test0362_Verify_Side_Notes_Icon_Of_First_Highlight_Is_Not_Clickable</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test0363_Verify_Side_Notes_Icon_Takes_Color_Of_Nearest_Selection()'><b>Test0363_Verify_Side_Notes_Icon_Takes_Color_Of_Nearest_Selection</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test037_Verify_Show_More_Link_Appears_On_Entering_Text_More_Than_Limited_Text()'><b>Test037_Verify_Show_More_Link_Appears_On_Entering_Text_More_Than_Limited_Text</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test038_Verify_Show_Less_Link_Appears_When_User_Clicks_On_Show_More_Link()'><b>Test038_Verify_Show_Less_Link_Appears_When_User_Clicks_On_Show_More_Link</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test039_Click_Back_Button_For_Handheld()'><b>Test039_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test040_Verify_User_Is_Able_To_Close_Notes_Pane()'><b>Test040_Verify_User_Is_Able_To_Close_Notes_Pane</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test041_Verify_Notes_Pane_Opens_On_Clicking_Annotate()'><b>Test041_Verify_Notes_Pane_Opens_On_Clicking_Annotate</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test042_Click_Back_Button_For_Handheld()'><b>Test042_Click_Back_Button_For_Handheld</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test046_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active()'><b>Test046_Verify_On_Clicking_Annotate_Mode_Icon_Annotate_Mode_Is_Active</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test047_Verify_Copy_Link_Is_Displayed_On_Selecting_Text_In_Create_Flyout()'><b>Test047_Verify_Copy_Link_Is_Displayed_On_Selecting_Text_In_Create_Flyout</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+<tr>
+<td title='com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test.Test048_Verify_User_Is_Able_to_Use_Copied_text_In_Search_Text_Bar()'><b>Test048_Verify_User_Is_Able_to_Use_Copied_text_In_Search_Text_Bar</b><br>Test class: com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test</td>
+<td></td>
+<td>0</td>
+<td>com.qait.hbp.ereader.tests.Annotation_And_Highlights_Test@91161c7</td></tr>
+>>>>>>> 8fe094e1fd15487c6943d57fcd123153415737c0
+</table><p>
+</body>
+</html>

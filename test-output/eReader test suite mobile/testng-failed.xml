@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [eReader test suite mobile]">
+  <test name="eReader(failed)">
+    <groups>
+      <run>
+        <include name="mobile"/>
+      </run>
+    </groups>
+    <classes>
+<<<<<<< HEAD
+      <class name="com.qait.hbp.ereader.tests.Settings_Test">
+        <methods>
+          <include name="Test0361_Verify_That_In_Offline_Mode_All_Core_Functionality_Is_Working"/>
+          <include name="Test0240_Verify_User_Is_Able_To_Highlight_Paragraph"/>
+          <include name="Test0351_Verify_Changes_Are_Retained_Before_Turning_off_Network_Connection"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="start_test_session"/>
+          <include name="Test023_Verify_User_Is_Able_To_Select_Paragraph"/>
+          <include name="stop_test_session"/>
+          <include name="Test0320_Verify_Legal_Link_Is_Functional"/>
+        </methods>
+      </class> <!-- com.qait.hbp.ereader.tests.Settings_Test -->
+=======
+      <class name="com.qait.hbp.ereader.tests.General_Checkpoints_Test">
+        <methods>
+          <include name="stop_test_session"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="Test0051_Verify_WebApp_Title_Is_Publication_Title"/>
+          <include name="start_test_session"/>
+        </methods>
+      </class> <!-- com.qait.hbp.ereader.tests.General_Checkpoints_Test -->
+>>>>>>> 745e4fc0f1529382b857c58bba83ed3ab4386143
+    </classes>
+  </test> <!-- eReader(failed) -->
+</suite> <!-- Failed suite [eReader test suite mobile] -->

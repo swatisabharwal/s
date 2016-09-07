@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qait.hbp.testBuilder.tests.Export_Copy_Delete_Test_Bank_Test">
+        <methods>
+          <include name="start_test_session"/>
+          <include name="Test004_Verify_User_Is_Able_To_Navigate_To_Test_Builder_Page"/>
+          <include name="Test003_Verify_User_Is_Able_To_Search_The_Product"/>
+          <include name="Test008_Copy_A_Test_Bank_And_Verify_If_Copy_Was_Created_Successfully"/>
+          <include name="Test009_Delete_The_Copied_TestBank"/>
+          <include name="Test007_Verify_Export_Button_Is_Present_With_Test_Bank"/>
+          <include name="Test0001_Launch_Login_URL"/>
+          <include name="Test005_Navigate_To_My_Test_Tab_And_Verify_Created_Test_Appears"/>
+          <include name="Test002_Verify_User_Is_Able_To_Login_Into_Application"/>
+        </methods>
+      </class> <!-- com.qait.hbp.testBuilder.tests.Export_Copy_Delete_Test_Bank_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
